@@ -71,7 +71,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
   console.log(data);
   axios.post('https://tutorplusbackend.herokuapp.com/register', data).then((res) => {
     document.getElementById('form').reset();
-    alert(`Form Submitted`);
+    alert(`Thanks for contacting us! We will give you a ring within 24 hours.`);
     document.getElementById('submit-btn').disabled = false;
   });
 });
